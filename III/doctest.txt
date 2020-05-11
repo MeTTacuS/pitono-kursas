@@ -1,0 +1,12 @@
+Command to run:
+python -m doctest -v doctest.txt
+
+>>> from AreAllLowercase import IsLowercaseWithWhitespace
+>>> IsLowercaseWithWhitespace("laba diena")
+True
+>>> IsLowercaseWithWhitespace("Laba Diena")
+False
+>>> IsLowercaseWithWhitespace("laba 0 diena")
+False
+>>> IsLowercaseWithWhitespace("laba % diena")
+False
