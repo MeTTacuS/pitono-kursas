@@ -24,9 +24,10 @@ class AreAllLowercaseTests(unittest.TestCase):
     result = IsLowercaseWithWhitespace("laba & diena")
     self.assertEqual(result, False)
 
+if __name__ == '__main__':
+  unittest.main()
+
+# Doctestu pavertimui i unit testus
 def load(loader, tests, ignore):
   tests.addTests(doctest.DocFileSuite("doctest.txt"))
   return tests
-
-if __name__ == '__main__':
-  unittest.main()
